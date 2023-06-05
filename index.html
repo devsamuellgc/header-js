@@ -44,7 +44,30 @@
             </div>
         </header>
         <section class="content">
-
+            <form class="formulario" id="form">
+                <h2 class="title">Get a real offer in minutes</h2>
+                <p class="text">Most cars qualify, some we'll ask to see in person.</p>
+                <div class="btns">
+                    <button class="btn-one">LICENSE PLATE</button>
+                    <button class="btn-two">VIN</button>
+                </div>
+                <label class="label-form" for="license">License plate number</label>
+                <input class="input-form" name="license" id="license" type="text">
+                <span class="invalid" id="invalid-license">Campo inválido</span>
+                <label class="label-form" for="state">
+                    Where's your car registered?
+                </label>
+                <select class="input-form" name="state" id="state">
+                    <option selected disabled></option>
+                    <option value="ce">Ceará</option>
+                    <option value="ma" disabled>Maranhão</option>
+                    <option value="sp">São Paulo</option>
+                </select>
+                <span class="invalid" id="invalid-state">Campo inválido</span>
+                <label class="label-form" for="zip">What's your zip code?</label>
+                <input class="input-form" type="text" id="zip" name="zip">
+                <button id="btn-send" class="btn-send">Get my offer</button>
+            </form>
         </section>
         <footer class="footer">
 
