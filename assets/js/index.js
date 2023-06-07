@@ -42,6 +42,7 @@ function validLicenseInput() {
     } else {
         license.style.border = '2px solid red'
         invalidLicense.style.display = 'flex'
+        formLicenseValid = false
     }
 }
 

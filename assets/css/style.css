@@ -79,6 +79,7 @@
     position: absolute;
     right: -2px;
     top: 27px;
+    z-index: 1;
 }
 
 .link-dropdown .list {
