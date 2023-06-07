@@ -145,6 +145,34 @@
 
 .formulario .btns {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 36px;
+}
+
+.formulario .btns .btn:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.formulario .btns .btn:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.formulario .btns .btn {
+    background-color: #fff;
+    border: 2px solid #1773cf;
+    color: #1773cf;
+    cursor: pointer;
+    padding: 3px 0.5rem;
+    text-align: center;
+    width: auto;
+    flex: 1 1 0px;
+}
+
+.formulario .btns .selected {
+    background-color: #1773cf;
+    color: #fff;
+    cursor: default;
 }
 
 .formulario .label-form {
