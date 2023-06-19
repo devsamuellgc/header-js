@@ -48,22 +48,28 @@
                 <h2 class="title">Get a real offer in minutes</h2>
                 <p class="text">Most cars qualify, some we'll ask to see in person.</p>
                 <div class="btns">
-                    <button class="btn selected">LICENSE PLATE</button>
-                    <button class="btn">VIN</button>
+                    <button id="btn-license" class="btn selected">LICENSE PLATE</button>
+                    <button id="btn-vin" class="btn">VIN</button>
                 </div>
-                <label class="label-form" for="license">License plate number</label>
-                <input class="input-form" name="license" id="license" type="text">
-                <span class="invalid" id="invalid-license">Campo inválido</span>
-                <label class="label-form" for="state">
-                    Where's your car registered?
-                </label>
-                <select class="input-form" name="state" id="state">
-                    <option selected disabled></option>
-                    <option value="ce">Ceará</option>
-                    <option value="ma" disabled>Maranhão</option>
-                    <option value="sp">São Paulo</option>
-                </select>
-                <span class="invalid" id="invalid-state">Campo inválido</span>
+                <div class="vin-fields hidden" id="vin-fields">
+                    <label class="label-form" for="license">License plate number</label>
+                    <input class="input-form" name="license" id="license" type="text">
+                </div>
+                <div class="license-fields" id="license-fields">
+                    <label class="label-form" for="license">License plate number</label>
+                    <input class="input-form" name="license" id="license" type="text">
+                    <span class="invalid" id="invalid-license">Campo inválido</span>
+                    <label class="label-form" for="state">
+                        Where's your car registered?
+                    </label>
+                    <select class="input-form" name="state" id="state">
+                        <option selected disabled></option>
+                        <option value="ce">Ceará</option>
+                        <option value="ma" disabled>Maranhão</option>
+                        <option value="sp">São Paulo</option>
+                    </select>
+                    <span class="invalid" id="invalid-state">Campo inválido</span>
+                </div>
                 <label class="label-form" for="zip">What's your zip code?</label>
                 <input class="input-form" type="text" id="zip" name="zip">
                 <button id="btn-send" disabled class="btn-send">Get my offer</button>

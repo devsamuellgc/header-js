@@ -210,3 +210,12 @@
     background-color: coral;
     border-radius: 10px;
 }
+
+.vin-fields,
+.license-fields {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
